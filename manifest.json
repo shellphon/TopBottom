@@ -1,0 +1,18 @@
+{
+   "name": "我只能帮你到顶部了",
+   "content_scripts": [ {
+      "matches": [ "http://*/*", "https://*/*" ],
+      "js": [ "js/topbottom.js" ],
+      "css": ["css/topbottom.css"]
+   } ],
+   "description": "让所有页面都有回到顶部和底部的功能，阅读页面方便。",
+   "homepage_url": "http://shellphon.github.io/toolpages/topbottom.html",
+   "icons": {
+      "128": "assets/logo_128x128.png",
+      "48": "assets/logo_48x48.png",
+      "19": "assets/logo_19x19.png",
+      "16": "assets/logo_16x16.png"
+   },
+   "manifest_version": 2,
+   "version": "1.1.0"
+}
