@@ -14,6 +14,7 @@ body{
     visibility: hidden;/*display none can not be target for a*/
   }
   a#backTopDont{
+    box-sizing:content-box;
     position: fixed;
     right: 100px;
     bottom: 100px;
@@ -36,6 +37,7 @@ body{
     border-color: transparent transparent rgba(0,0,0,0.4) transparent; 
   }
   a#backBottomDont{
+    box-sizing:content-box;
     position: fixed;
     right: 100px;
     bottom: 80px;
