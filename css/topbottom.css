@@ -13,11 +13,19 @@ body{
     z-index: -1;
     visibility: hidden;/*display none can not be target for a*/
   }
-  a#backTopDont{
-    box-sizing:content-box;
+  #dontWrapper{
+    width: 22px;
+    height: 44px;
+    border-left: 15px solid #ffcc99;
     position: fixed;
-    right: 100px;
+    right:100px;
     bottom: 100px;
+  }
+ a#backTopDont{
+    box-sizing:content-box;
+    position: absolute;
+   /* right: 100px;
+    bottom: 100px;*/
     display: block;
     z-index: 7;
     width: 20px;
@@ -38,9 +46,10 @@ body{
   }
   a#backBottomDont{
     box-sizing:content-box;
-    position: fixed;
-    right: 100px;
-    bottom: 80px;
+    position: absolute;
+  /*   right: 100px;
+  bottom: 80px; */
+  bottom: 0px;
     display: block;
     z-index: 7;
     width: 20px;
