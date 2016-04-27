@@ -1,55 +1,51 @@
-  #dontWrapper{
-    width: 22px;
-    height: 44px;
-    border-left: 15px solid #ffcc99;
-    position: fixed;
-    right:100px;
-    bottom: 100px;
-  }
- a#backTopDont{
-    box-sizing:content-box;
-    position: absolute;
-   /* right: 100px;
-    bottom: 100px;*/
-    display: block;
-    z-index: 7;
-    width: 20px;
-    height: 20px;
-    border: 1px dashed #CBDFC8; 
- }
-  #backTopDont::after{
-    content:"";
-    display: block;
-    position: absolute;
-    bottom: 6px;
-    left: 2px;
-    width: 0px;
-    height: 0px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: transparent transparent rgba(0,0,0,0.4) transparent; 
-  }
-  a#backBottomDont{
-    box-sizing:content-box;
-    position: absolute;
-  /*   right: 100px;
-  bottom: 80px; */
+#dontWrapper {
+  width: 22px;
+  height: 44px;
+  border-left: 15px solid #ffcc99;
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+}
+#dontWrapper .back-top {
+  box-sizing: content-box;
+  position: absolute;
+  display: block;
+  z-index: 7;
+  width: 20px;
+  height: 20px;
+  border: 1px dashed #CBDFC8;
+}
+#dontWrapper .back-top::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 6px;
+  left: 2px;
+  width: 0px;
+  height: 0px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.4) transparent;
+}
+#dontWrapper .back-bottom {
+  box-sizing: content-box;
+  position: absolute;
   bottom: 0px;
-    display: block;
-    z-index: 7;
-    width: 20px;
-    height: 20px;
-    border: 1px dashed #CBDFC8;
-  }
-  #backBottomDont::after{
-    content:"";
-    display: block;
-    position: absolute;
-    top: 6px;
-    left: 2px;
-    width: 0px;
-    height: 0px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: rgba(0,0,0,0.4) transparent transparent transparent; 
-  }
+  display: block;
+  z-index: 7;
+  width: 20px;
+  height: 20px;
+  border: 1px dashed #CBDFC8;
+}
+#dontWrapper .back-bottom::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 2px;
+  width: 0px;
+  height: 0px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;
+}
