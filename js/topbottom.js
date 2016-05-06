@@ -5,9 +5,9 @@
 		aBottomD = document.createElement("a");
 	var bottomPos = document.body.offsetHeight;
 	aTopD.id = "backTopDont";
-	aTopD.className = 'back-top';
+	aTopD.className = 'back-top-dont';
 	aBottomD.id = "backBottomDont";
-	aBottomD.className = "back-bottom";
+	aBottomD.className = "back-bottom-dont";
 	
 	divWrapper.id="dontWrapper";
 	divWrapper.appendChild(aTopD);

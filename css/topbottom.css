@@ -6,7 +6,7 @@
   right: 100px;
   bottom: 100px;
 }
-#dontWrapper .back-top {
+#dontWrapper .back-top-dont {
   box-sizing: content-box;
   position: absolute;
   display: block;
@@ -15,7 +15,7 @@
   height: 20px;
   border: 1px dashed #CBDFC8;
 }
-#dontWrapper .back-top::after {
+#dontWrapper .back-top-dont::after {
   content: "";
   display: block;
   position: absolute;
@@ -27,7 +27,7 @@
   border-style: solid;
   border-color: transparent transparent rgba(0, 0, 0, 0.4) transparent;
 }
-#dontWrapper .back-bottom {
+#dontWrapper .back-bottom-dont {
   box-sizing: content-box;
   position: absolute;
   bottom: 0px;
@@ -37,7 +37,7 @@
   height: 20px;
   border: 1px dashed #CBDFC8;
 }
-#dontWrapper .back-bottom::after {
+#dontWrapper .back-bottom-dont::after {
   content: "";
   display: block;
   position: absolute;
