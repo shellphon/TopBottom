@@ -14,27 +14,27 @@
 	divWrapper.appendChild(aBottomD);
 
 	dontBody.appendChild(divWrapper);
+	moving = false;
 
 	//移动
-	function moveDiv(){
-			divWrapper.style.top = (event.clientY - diffY)+"px";
-			divWrapper.style.left = (event.clientX - diffX)+"px";
-		
+	function moveDiv(event){
+		if(!moving) return;
+		divWrapper.style.top = (event.clientY - diffY)+"px";
+		divWrapper.style.left = (event.clientX - diffX)+"px";
 	}
 
 	var diffX = 0,
-		diffY =0;
+		diffY = 0;
 	divWrapper.addEventListener("mousedown",function(){
-		if(event.target==divWrapper){
-			divWrapper.style.cursor="move";
-			diffX = event.clientX - divWrapper.offsetLeft;
-			diffY = event.clientY - divWrapper.offsetTop;
-			document.body.addEventListener("mousemove", moveDiv);
-		}
+		moving = true;
+		divWrapper.style.cursor="move";
+		diffX = event.clientX - divWrapper.offsetLeft;
+		diffY = event.clientY - divWrapper.offsetTop;
 	});
-	divWrapper.addEventListener("mouseup", function(){
+	document.addEventListener("mousemove", moveDiv);
+	document.addEventListener("mouseup", function(){
 		divWrapper.style.cursor = "auto";
-		document.body.removeEventListener("mousemove", moveDiv);
+		moving = false;
 	});
 
 	//跳到顶部和底部
